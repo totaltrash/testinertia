@@ -1,5 +1,5 @@
 <template>
-  <p>Testing {{ prop }}</p>
+  <p id="my-para">Testing {{ prop }}</p>
 </template>
 
 <script>
