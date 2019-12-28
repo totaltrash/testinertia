@@ -34,6 +34,7 @@
     "require-dev": {
         "behat/mink": "dev-master",
         "behat/mink-browserkit-driver": "dev-master",
+        "dmore/chrome-mink-driver": "^2.7",
         "doctrine/data-fixtures": "^1.3",
         "lctrs/mink-panther-driver": "^0.4.1",
         "memio/spec-gen": "^0.9.0",

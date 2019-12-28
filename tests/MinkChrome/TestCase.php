@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Mink;
+namespace Tests\MinkChrome;
 
 use Tests\Config\Web\Assert;
 use Tests\Config\Configuration;

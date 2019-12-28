@@ -52,3 +52,9 @@ Left out the following encore config from https://github.com/rompetomp/inertia-b
 Load components script from dsv
 
 Update config with v4 symfony config? See F*** UP above for more info.
+
+Fixture Factory
+
+Mocker? Never gonna work?
+
+WebTestCase using Mink/Panther stuff

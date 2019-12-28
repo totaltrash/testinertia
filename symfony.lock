@@ -20,6 +20,9 @@
     "container-interop/container-interop": {
         "version": "1.2.0"
     },
+    "dmore/chrome-mink-driver": {
+        "version": "2.7.0"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -604,6 +607,9 @@
     },
     "symfony/yaml": {
         "version": "v5.0.2"
+    },
+    "textalk/websocket": {
+        "version": "1.2.0"
     },
     "twig/twig": {
         "version": "v3.0.0"
