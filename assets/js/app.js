@@ -2,6 +2,7 @@ import('../css/app.scss');
 
 import { InertiaApp } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
+import vuetify from './plugins/vuetify'
 
 Vue.use(InertiaApp)
 
@@ -14,4 +15,5 @@ new Vue({
       resolveComponent: name => require(`./pages/${name}`).default,
     },
   }),
+  vuetify,
 }).$mount(app)
