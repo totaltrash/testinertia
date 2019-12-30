@@ -1,5 +1,6 @@
+var path = require('path');
 var Encore = require('@symfony/webpack-encore');
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+var VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
 if (!Encore.isRuntimeEnvironmentConfigured()) {
     Encore.configureRuntimeEnvironment(process.env.NODE_ENV || 'dev');
@@ -43,14 +44,11 @@ Encore
 
     .enableVueLoader()
     .addPlugin(new VuetifyLoaderPlugin())
+    .addAliases({'~': path.resolve(__dirname, 'assets/js')})
     .enableSassLoader(options => {
         options.implementation = require('sass')
         options.fiber = require('fibers')
     })
 ;
-
-// let config = Encore.getWebpackConfig();
-// config.resolve.alias["~"] = path.resolve(__dirname, 'assets/js');
-// module.exports = config;
 
 module.exports = Encore.getWebpackConfig();

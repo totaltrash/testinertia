@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Layout from '../shared/Layout'
+import Layout from '~/shared/Layout'
 
 export default {
   props: {
