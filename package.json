@@ -21,7 +21,8 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress",
-        "serve": "symfony server:start"
+        "serve": "symfony server:start",
+        "routing": "bin/console fos:js-routing:dump --format=json --target=assets/js/routes.json"
     },
     "dependencies": {
         "@inertiajs/inertia": "^0.1.7",

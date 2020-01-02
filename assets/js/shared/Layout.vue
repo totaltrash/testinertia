@@ -3,7 +3,7 @@
 
     <v-navigation-drawer v-model="drawer" app>
       <v-list dense>
-        <v-list-item link @click="$inertia.visit('/')" value="/">
+        <v-list-item link @click="$visitRoute('home')" value="/">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
@@ -11,7 +11,7 @@
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link @click="$inertia.visit('/item/')" value="/item/">
+        <v-list-item link @click="$visitRoute('item_list')" value="/item/">
           <v-list-item-action>
             <v-icon>mdi-contact-mail</v-icon>
           </v-list-item-action>

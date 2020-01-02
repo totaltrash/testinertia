@@ -39,6 +39,15 @@
       :items-per-page="5"
       class="elevation-1"
     >
+      <template v-slot:item.action="{ item }">
+        <v-icon
+          small
+          class="mr-2"
+          @click="$inertia.visit($route('item_edit', {id: item.id}))"
+        >
+          mdi-pencil-outline
+        </v-icon>
+      </template>
     </v-data-table>
   </div>
 </template>
@@ -68,6 +77,11 @@ export default {
         {
           text: 'Price',
           value: 'price'
+        },
+        {
+          text: 'Actions',
+          value: 'action',
+          sortable: false
         },
       ],
       editedIndex: -1,

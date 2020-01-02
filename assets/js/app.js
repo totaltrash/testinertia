@@ -1,10 +1,9 @@
 import('../css/app.scss');
 
-import { InertiaApp } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
 import vuetify from './plugins/vuetify'
-
-Vue.use(InertiaApp)
+import './plugins/routing'
+import InertiaApp from './plugins/inertia'
 
 const app = document.getElementById('app')
 
