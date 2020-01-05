@@ -4,6 +4,8 @@ import Vue from 'vue'
 import vuetify from './plugins/vuetify'
 import './plugins/routing'
 import InertiaApp from './plugins/inertia'
+import('typeface-roboto')
+import('material-design-icons')
 
 const app = document.getElementById('app')
 
