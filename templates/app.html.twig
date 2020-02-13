@@ -6,9 +6,10 @@
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-{{ inertia(page) }}
+{{ inertia(page, context) }}
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
 {% endblock %}

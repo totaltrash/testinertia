@@ -52,13 +52,13 @@ abstract class TestCase extends BaseWebTestCase
     {
         parent::setUp();
 
-        $this->session = $this->getSession();
-        $this->page = $this->session->getPage();
-        $this->assert = new Assert($this->session);
+        // $this->session = $this->getSession();
+        // $this->page = $this->session->getPage();
+        // $this->assert = new Assert($this->session);
         $this->entityManager = $this->getContainer()->get('doctrine.orm.default_entity_manager');
         $this->fixture = new FixtureLoader($this->entityManager);
         $this->fixture->resetDatabase($this->sequences, $this->exclusions);
-        $this->mocker = new Mocker($this->getContainer());
+        // $this->mocker = new Mocker($this->getContainer());
     }
 
     /**
@@ -66,12 +66,12 @@ abstract class TestCase extends BaseWebTestCase
      */
     protected function tearDown()
     {
-        $this->mocker->checkPredictions();
-        $this->mocker = null;
-        $this->session = null;
-        $this->page = null;
+        // $this->mocker->checkPredictions();
+        // $this->mocker = null;
+        // $this->session = null;
+        // $this->page = null;
         $this->entityManager = null;
-        $this->assert = null;
+        // $this->assert = null;
         $this->fixture = null;
 
         parent::tearDown();

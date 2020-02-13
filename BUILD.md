@@ -58,3 +58,18 @@ Fixture Factory
 Mocker? Never gonna work?
 
 WebTestCase using Mink/Panther stuff
+
+Notes
+=====
+
+Using the symfony form component in an api:
+
+* https://symfonycasts.com/screencast/symfony-rest/form-post
+* https://codereviewvideos.com/course/beginners-guide-back-end-json-api-front-end-2018/video/symfony-4-json-api-form-submission
+* https://symfony.com/doc/current/form/direct_submit.html
+
+
+Flexbox:
+
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background
+

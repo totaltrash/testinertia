@@ -1,12 +1,14 @@
 import Vue from 'vue'
-import Router from '~/bundles/fosjsrouting/js/router'
 import { Inertia } from '@inertiajs/inertia'
+import Router from '~/bundles/fosjsrouting/js/router'
+import Routes from '~/routes.json'
 
-const routes = require('../routes.json');
-Router.setRoutingData(routes);
+Router.setRoutingData(Routes);
+
 Vue.prototype.$route = function (...args) {
     return Router.generate(...args)
 }
+
 Vue.prototype.$visitRoute = function (...args) {
     return Inertia.visit(Router.generate(...args))
 }

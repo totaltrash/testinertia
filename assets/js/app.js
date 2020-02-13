@@ -1,11 +1,11 @@
-import('../css/app.scss');
+import '../css/app.scss'
 
 import Vue from 'vue'
 import vuetify from './plugins/vuetify'
 import './plugins/routing'
 import InertiaApp from './plugins/inertia'
-import('typeface-roboto')
-import('material-design-icons')
+import 'typeface-roboto'
+import './plugins/snackbar'
 
 const app = document.getElementById('app')
 

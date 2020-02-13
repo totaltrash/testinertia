@@ -34,10 +34,11 @@
       </v-dialog>
     </v-toolbar>
     <v-data-table
+      id="items_table"
       :headers="headers"
       :items="items"
       :items-per-page="5"
-      class="elevation-1"
+      class="elevation-0"
     >
       <template v-slot:item.action="{ item }">
         <v-icon

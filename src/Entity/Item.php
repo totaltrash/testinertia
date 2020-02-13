@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
@@ -20,12 +21,15 @@ class Item
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank(message="Required field")
      * @Groups({"item_list"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="decimal", precision=8, scale=2)
+     * @Assert\NotBlank(message="Required field")
+     * @Assert\Range(min=5, minMessage="No cheapo stuff less than {{ limit }} bucks yo")
      * @Groups({"item_list"})
      */
     private $price;
